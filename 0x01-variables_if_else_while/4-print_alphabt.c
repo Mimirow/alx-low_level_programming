@@ -2,7 +2,7 @@
 
 /**
  * main - prints the alphabeth in lowercase,
- *followed by new line 
+ * followed by new line 
  * Return: Always 0 (Success)
  */
 int main(void)
