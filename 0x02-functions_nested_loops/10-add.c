@@ -2,7 +2,7 @@
 
 /**
  * add - this function sum up two numbers.
- * @i: argument 1 that is passed when the function add is called 
+ * @i: argument 1 that is passed when the function add is called
  * @l: argument 2 that is passed when the function add is called
  * Return: returns the total sum.
  */
