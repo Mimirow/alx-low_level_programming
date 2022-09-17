@@ -1,12 +1,28 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * mul - multiply 2 integers
- * @a: int type number
- * @b: int type number
- * Return: result of multiplication
+ * largest_number - returns the largest of 3 numbers
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
+ * Return: largest number
  */
-int mul(int a, int b)
-{
-	return (a * b);
+
+int largest_number(int a, int b, int c)
+{int largest;
+
+	if (a > b && a > c)
+	{
+		largest = a;
+	}
+	else if (b > c)
+	{
+		largest = b;
+	}
+	else
+	{
+		largest = c;
+	}
+
+	return (largest);
 }
