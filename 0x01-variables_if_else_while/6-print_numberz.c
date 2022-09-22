@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * main - Entry point
+ * main: - Entry point
  *
  * Description: print 0-9 using putchar
  *              while using int variable
@@ -19,7 +19,7 @@ int main(void)
 		putchar(digit + '0');
 		++digit;
 	}
-	putchar;
+	putchar('\n');
 
 		return (0);
 }
