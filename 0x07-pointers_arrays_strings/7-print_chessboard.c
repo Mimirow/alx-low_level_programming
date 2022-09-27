@@ -1,53 +1,18 @@
 #include "main.h"
-
-#include <stdio.h>
-
-
-
 /**
- *
- * * print_diagsums - print sums of diagonals in matrix
- *
- * * @a: matrix
- *
- * * @size: size of matrix
- *
- * */
+ * print_chessboard - print chessboard given set 2D array
+ * @a: 2D array
+ */
 
-
-
-void print_diagsums(int *a, int size)
-
+void print_chessboard(char (*a)[8])
 {
+	int row;
+	int column;
 
-		int diagonal_sum_1 = 0;
-
-			int diagonal_sum_2 = 0;
-
-				int row, i;
-
-
-
-					for (row = 0; row < size; row++)
-
-							{
-
-										i = (row * size) + row;
-
-												diagonal_sum_1 += a[i];
-
-													}
-
-						for (row = 1; row <= size; row++)
-
-								{
-
-											i = (row * size) - row;
-
-													diagonal_sum_2 += a[i];
-
-														}
-
-							printf("%d, %d\n", diagonal_sum_1, diagonal_sum_2);
-
+	for (row = 0; row < 8; row++)
+	{
+		for (column = 0; column < 8; column++)
+			_putchar(a[row][column]);
+		_putchar('\n');
+	}
 }
