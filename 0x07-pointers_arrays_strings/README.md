@@ -1,1 +1,1 @@
-strpbrk
+Double pointer, double fun
