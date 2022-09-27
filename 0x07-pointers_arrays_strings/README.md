@@ -1,1 +1,1 @@
-Chess is mental torture
+strstr
