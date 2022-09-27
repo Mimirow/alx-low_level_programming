@@ -1,1 +1,1 @@
-The line of life is a ragged diagonal between duty and desire
+My primary goal of hacking was the intellectual curiosity, the seduction of adventure
