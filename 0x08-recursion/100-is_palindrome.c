@@ -1,19 +1,42 @@
 #include "main.h"
-
 /**
- * wildcmp - compares two strings and returns 1 if identical
- * @s1: string to be checked
- * @s2: pattern to be used
- *
- * Return: 1 if identical, 0 otherwise
+ * _strlen_recursion - find length of string, recursively
+ * @s: pointer to beginning of string
+ * Return: int representing string length
  */
-int wildcmp(char *s1, char *s2)
+int _strlen_recursion(char *s)
 {
-	if (*s2 == '\0')
-		return (*s1 == '\0');
-	if (*s2 == *s1)
-		return (*s1 != '\0' && wildcmp(s1 + 1, s2 + 1));
-	if (*s2 == '*')
-		return (wildcmp(s1, s2 + 1) || (*s1 != '\0' && wildcmp(s1 + 1, s2)));
+	if (*s)
+		return (_strlen_recursion(s + 1) + 1);
 	return (0);
+}
+/**
+ * pal_check - recursively checks for palindrome
+ * @a: for the start of string
+ * @length: length of string
+ * Return: 1 if pal, 0 otherwise
+ */
+int pal_check(char *a, int length)
+{
+	if (length <= 1)
+		return (1);
+	else if (a[0] != a[length - 1])
+		return (0);
+	else
+		return (pal_check((a + 1), (length - 2)));
+}
+/**
+ * is_palindrome - recursively checks for palindrome
+ * @s: pointer to beginning of string, potential palindrome
+ * Return: 1 if pal, 0 otherwise
+ */
+
+int is_palindrome(char *s)
+{
+	int len;
+
+	len = _strlen_recursion(s);
+	if (len <= 1)
+		return (1);
+	return (pal_check(s, len));
 }
