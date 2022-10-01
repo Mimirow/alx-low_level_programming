@@ -1,1 +1,1 @@
-Silence is argument carried out by other means
+The best argument against democracyis a five-minute conversation with the average voters
