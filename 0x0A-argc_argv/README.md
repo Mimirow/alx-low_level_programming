@@ -1,1 +1,1 @@
-The best argument against democracyis a five-minute conversation with the average voters
+Neither irony nor sarcasm is argument
