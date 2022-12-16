@@ -1,1 +1,1 @@
-Code injection: Win the Giga Millions!
+0x18. C - Dynamic libraries
