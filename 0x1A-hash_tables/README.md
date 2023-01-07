@@ -1,2 +1,1 @@
-
->>> ht['betty']
+>>> print(ht)
